@@ -1,12 +1,12 @@
-import { Overmind } from "overmind";
+import { Overmind, TApp } from 'overmind';
 
 const state = {};
 
 const config = {
-  state
+  state,
 };
 
-declare module "overmind" {
+declare module 'overmind' {
   interface App extends TApp<typeof config> {}
 }
 
